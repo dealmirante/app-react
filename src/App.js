@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ListadoPersonajes from './components/ListadoPersonajes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <React.Fragment>
+      <h1> Hola Mundo </h1>
+
+      <ListadoPersonajes dePrueba = "Hoy es el dia 119 de la cuarentena" >
+        <h3> Hola mundo, esto es un children </h3>
+        <h3> Hola mundo, esto es otro children </h3>
+      </ListadoPersonajes>
+
+    </React.Fragment>
   );
 }
-
 export default App;
